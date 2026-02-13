@@ -7,7 +7,7 @@ import StardewCursor from './components/StardewCursor.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <StardewCursor />
       <App />
     </BrowserRouter>
